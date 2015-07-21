@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Endpoints
+metadata:
+  name: kube-ui
+  namespace: kube-system
+  labels:
+    k8s-app: kube-ui
+    kubernetes.io/cluster-service: "true"
+    kubernetes.io/name: "KubeUI"
+subsets:
+  - addresses:
+    - ip: 10.161.132.18
+
+    ports:
+    - port: 8080
+      protocol: TCP
