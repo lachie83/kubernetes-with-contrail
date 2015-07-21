@@ -2,6 +2,9 @@
 
 Build details for installation of Kubernetes cluster with OpenContrail
 
+Demo
+* http://youtu.be/P3dpfvdkGJ0
+
 Tested Examples
 
 * DNS service
