@@ -2,6 +2,13 @@
 
 Build details for installation of Kubernetes cluster with OpenContrail
 
+Tested Examples
+
+* DNS service
+* Multi-node applications using a single network namespace
+* Multi-namespace support
+* Network multi-tenancy using namespaces
+
 Referenced Repos
 
 * https://github.com/GoogleCloudPlatform/kubernetes
