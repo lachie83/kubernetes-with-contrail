@@ -2,6 +2,9 @@
 
 Build details for installation of Kubernetes cluster with OpenContrail
 
+* Network Diagram
+![Network Diagram](https://raw.githubusercontent.com/lachie83/kubernetes-with-contrail/master/diagrams/k8s-contrail-logical-diagram.png)
+
 Demo
 * http://youtu.be/P3dpfvdkGJ0
 
