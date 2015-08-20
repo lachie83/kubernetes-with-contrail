@@ -15,10 +15,11 @@ interface=vgw
 # block is represented as ip/prefix. Multiple IP blocks are represented by
 # separating each with a space
 ip_blocks=10.161.132.0/22
+```
 
-—
 ip-up script for the gateway interface:
 
+```
 ip link add vgw type vhost
 ip link set vgw address 00:00:5e:00:01:00
 ip link set vgw up
