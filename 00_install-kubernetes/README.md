@@ -7,17 +7,20 @@
 ## Roles & Services
 
 * Kubernetes Master
-** etcd
-** kube-apiserver
-** kube-scheduler
-** kube-controller-manager
+ * etcd
+ * kube-apiserver
+ * kube-scheduler
+ * kube-controller-manager
 
 * Kubernetes Node
-** kubelet
+ * kubelet
+ 
+* NB. kube-proxy is not needed in this configuration. 
 
 # Installation
 
-Run the shell script corresponding to the role
+* Run the shell script corresponding to the role
+* Alternatively you can run 00_install-kubernetes-master.sh and snapshot the instance and then deploy services depending on the role.
 
 # Post-Installation
 
@@ -27,8 +30,9 @@ Run the shell script corresponding to the role
 # Starting
 
 * Use upstart to start/stop/restart the services
-** eg. service kubelet start
+ * eg. ```service kubelet start```
 
 # Caveats
 
 * Log directories don't appear to be created
+* ```mkdir -p /var/log/kubernetes```
